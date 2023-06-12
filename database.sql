@@ -6,6 +6,6 @@ CREATE TABLE IF NOT EXISTS requests (
   message TEXT NOT NULL,
   comment TEXT,
   created_at TIMESTAMP NOT NULL DEFAULT NOW(),
-  updated_at TIMESTAMP DEFAULT NOW()
+  updated_at TIMESTAMP 
 );
  

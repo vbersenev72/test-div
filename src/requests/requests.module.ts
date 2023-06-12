@@ -1,14 +1,14 @@
 import { Module } from '@nestjs/common';
-import { SequelizeModule } from '@nestjs/sequelize';
+import { DBService } from 'db';
 import { RequestsController } from './requests.controller';
-import { Request } from './requests.model';
 import { RequestsService } from './requests.service';
 
 @Module({
   controllers: [RequestsController],
-  providers: [RequestsService],
+  providers: [RequestsService, DBService],
   imports: [
-    SequelizeModule.forFeature([Request])
+
   ]
 })
 export class RequestsModule {}
+
