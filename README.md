@@ -1,7 +1,11 @@
-### GET http://localhost:5000/requests - Получить список заявок в отсортированном виде
+### Запуск:
+	docker-compose up
 
 
-### POST http://localhost:5000/requests - Создать заявку
+##### GET http://localhost:5000/requests - Получить список заявок в отсортированном виде
+
+
+##### POST http://localhost:5000/requests - Создать заявку
 	{
 		"email": "user@user.com",
 		"name": "user",
@@ -10,7 +14,7 @@
 	}
 
 
-### PUT http://localhost:5000/requests/{id} - Ответ на конкретную задачу ответственным лицом
+##### PUT http://localhost:5000/requests/{id} - Ответ на конкретную задачу ответственным лицом
 	{
 		"comment": "modyfied request comment {id}"
 	}
